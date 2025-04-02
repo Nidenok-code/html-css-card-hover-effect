@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #0d192c;
+  font-family: "Outfit", sans-serif;
+}
+.viewport {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 350px;
+  height: 600px;
+  background: #15263f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.comment {
+  height: 570px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.comment-img {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+.viwe-image {
+  position: absolute;
+  top: 0;
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  transition: all 0.2s linear 0s;
+}
+.viwe-image:hover {
+  background: rgba(0, 255, 248, 0.5);
+}
+.b-eye {
+  width: 302px;
+  height: 302px;
+  opacity: 0;
+  border-radius: 8px;
+  transition: all 0.3s linear 0s;
+  transition: border 0.2s linear 0s;
+}
+.eye {
+  display: block;
+  position: absolute;
+  top: 136px;
+  left: 129px;
+}
+.b-eye:hover {
+  opacity: 100%;
+  border: 2px solid rgba(0, 255, 248, 1);
+}
+h1 {
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 22px;
+  transition: color 0.2s linear 0s;
+}
+h1:hover {
+  color: #00fff8;
+}
+.comment-text {
+  color: #8bacd9;
+  font-weight: 300;
+  font-size: 18px;
+}
+.comment-something {
+  display: flex;
+  justify-content: space-between;
+}
+.someting-first {
+  display: flex;
+  color: #00fff8;
+  font-weight: 600;
+}
+.someting-second {
+  display: flex;
+  color: #8bacd9;
+}
+.comment-something img {
+  padding-right: 8px;
+}
+.comment-line {
+  border-bottom: 2px solid #2e405a;
+}
+.comment-footer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.comment-footer-text {
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8bacd9;
+}
+.footer-text-s {
+  transition: color 0.2s linear 0s;
+  color: #ffffff;
+}
+.footer-text-s:hover {
+  color: #00fff8;
+}
